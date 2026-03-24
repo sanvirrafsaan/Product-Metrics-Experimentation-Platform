@@ -94,7 +94,7 @@ def init_db():
                    VALUES (?, ?, ?, ?)""",
                 (exp_id, user_id, "refund_rate", float(refunded)),
             )
-            # aov: dollar amount (0 if no purchase, else 100–300)
+            # aov: dollar amount (0 if no purchase ie converted is 0, else 100–300)
             aov = random.uniform(100, 300) if converted else 0.0
             cursor.execute(
                 """INSERT INTO events (experiment_id, user_id, event_type, event_value)
