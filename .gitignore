@@ -1,0 +1,31 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Environment / secrets (don't commit API keys)
+.env
+.env.*
+
+# Local databases (remove this line if you want `data/*.db` on GitHub)
+*.db
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+.DS_Store
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
